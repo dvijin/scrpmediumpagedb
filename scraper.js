@@ -49,7 +49,7 @@ function writeDB(results) {
   console.log("work with db starts");
   console.dir(results);
 
-  var db = new sqlite3.Database('pagekit.db');
+  var db = new sqlite3.Database('data.sqlite');
   db.serialize(function(){
     db.run('DROP TABLE IF EXISTS new');
 
