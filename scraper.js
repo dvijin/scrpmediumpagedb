@@ -303,7 +303,7 @@ async function scrapeWebsite (website, browser) {
 
 /*
 async function scrapeWebsitesParallel(websites) {
-  const browser = await puppeteer.launch({headless: false});
+  const browser = await puppeteer.launch({headless: true});
   websites.forEach(async website => {
       await scrapeWebsite(website, browser);
   });
@@ -311,7 +311,7 @@ async function scrapeWebsitesParallel(websites) {
 */
 
 async function scrapeWebsites(websites) {
-  const browser = await puppeteer.launch({headless: false});
+  const browser = await puppeteer.launch({headless: true});
   // alg1 start scraping websites  // запускаем сайты на скрапинг, в данном случае по идее сайты должны были запускаться последовательно, но работает параллельно
   for (let i = 0; i < websites.length; i++) {
     await scrapeWebsite(websites[i], browser);
