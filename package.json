@@ -1,0 +1,13 @@
+{
+  "version": "0.0.1",
+  "main": "scraper.js",
+  "dependencies": {
+    "puppeteer": "latest",
+    "sqlite3": "latest",
+    "cheerio": "latest"
+  },
+  "keywords": [
+    "scraper",
+    "morph"
+  ]
+}
